@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>EvNavi - Mini Project Report</title>
+<style>
+    body {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 12pt;
+        line-height: 1.5;
+        text-align: justify;
+        margin: 1in;
+    }
+    h1 {
+        font-size: 18pt;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 24pt;
+        margin-bottom: 24pt;
+    }
+    h2 {
+        font-size: 16pt;
+        font-weight: bold;
+        text-align: left;
+        margin-top: 18pt;
+        margin-bottom: 12pt;
+    }
+    h3 {
+        font-size: 14pt;
+        font-weight: bold;
+        text-align: left;
+        margin-top: 16pt;
+        margin-bottom: 10pt;
+    }
+    .center {
+        text-align: center;
+    }
+    .page-break {
+        page-break-after: always;
+    }
+    /* Front pages styling */
+    .front-page {
+        text-align: center;
+        line-height: 2;
+    }
+    .uppercase {
+        text-transform: uppercase;
+    }
+    .footer-center {
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+
+<!-- Title Page -->
+<div class="front-page">
+    <br><br><br>
+    <b style="font-size:16pt;">EVNAVI: EV NAVIGATION AND ROUTE PLANNING APPLICATION</b><br><br>
+    <b style="font-size:14pt;">MINI PROJECT REPORT</b><br><br>
+    submitted by<br><br>
+    <b style="font-size:14pt;">[STUDENT NAME] ([REG. NO.])</b><br><br>
+    under the guidance of<br><br>
+    <b style="font-size:14pt;">[GUIDE NAME]</b><br>
+    [Designation]<br><br>
+    to the APJ Abdul Kalam Technological University in partial fulfillment of the requirement for the award of the Degree of<br><br>
+    <b style="font-size:14pt;">Bachelor of Technology in Computer Science and Engineering</b><br><br><br><br><br><br>
+    <b style="font-size:14pt;">Department of Computer Science and Engineering</b><br>
+    <b style="font-size:14pt;">Amal Jyothi College of Engineering (Autonomous)</b><br>
+    Kanjirappally - 686518<br>
+    March 2026
+</div>
+
+<div class="page-break"></div>
+
+<!-- Declaration -->
+<h1 class="uppercase">Declaration</h1>
+<p>
+I undersigned hereby declare that the project report <b>“EvNavi: EV Navigation and Route Planning Application”</b>, submitted for partial fulfillment of the requirements for the award of degree of Bachelor of Technology of the APJ Abdul Kalam Technological University, Kerala is a Bonafide work done by me under the supervision of [GUIDE NAME]. This submission represents my ideas in my own words and where ideas or words of others have been included, I have adequately and accurately cited and referenced the original sources.
+</p>
+<p>
+I also declare that we have adhered to ethics of academic honesty and integrity and have not misrepresented or fabricated any data or idea or fact or source in our submission. I understand that any violation of the above will be a cause for disciplinary action by the institute and/or the University and can also evoke penal action from the sources which have thus not been properly cited or from whom proper permission has not been obtained. This report has not been previously formed the basis for the award of any degree, diploma or similar title of any other University.
+</p>
+<br><br>
+<p>Kanjirappally</p>
+<p>Date: </p>
+<div style="text-align:right;">[STUDENT NAME]</div>
+
+<div class="page-break"></div>
+
+<!-- Certificate -->
+<div class="center">
+    <b style="font-size:14pt;">DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING</b><br>
+    <b style="font-size:14pt;">AMAL JYOTHI COLLEGE OF ENGINEERING</b><br>
+    <b style="font-size:14pt;">KANJIRAPPALLY</b>
+</div>
+<h1 class="uppercase">Certificate</h1>
+<p>
+This is to certify that the report entitled <b>“EvNavi: EV Navigation and Route Planning Application”</b> submitted by <b>[STUDENT NAME] ([REG.No.])</b> to the APJ Abdul Kalam Technological University in partial fulfillment of the requirements for the award of the Degree of Bachelor of Technology in Computer Science and Engineering is a Bonafide record of the project work carried out by him/her under my guidance and supervision. This report in any form has not been submitted to any other University or Institute for any purpose.
+</p>
+<br><br><br><br>
+<div style="display: flex; justify-content: space-between;">
+    <div style="text-align:left;">[Guide Name]<br>Internal Supervisor</div>
+    <div style="text-align:right;">[Coordinator Name]<br>Project Coordinator</div>
+</div>
+<br><br><br>
+<div class="center">Dr. Juby Mathew<br>Head of Department, CSE</div>
+
+<div class="page-break"></div>
+
+<!-- Acknowledgement -->
+<h1 class="uppercase">Acknowledgement</h1>
+<p>
+First of all, I sincerely thank the Almighty GOD who is most beneficent and merciful for giving us knowledge and courage to complete the Project successfully.
+</p>
+<p>
+I derive immense pleasure in expressing our sincere thanks to our Manager and Managing Trustee, Very. Rev. Fr. Boby Alex Mannamplackal, Rev. Fr. Dr. Roy Abraham Pazhayaparampil (Director, Administration) and to our Principal, Dr. Lillykutty Jacob for the kind cooperation in all aspects of my Project.
+</p>
+<p>
+I express our gratitude to Dr. Juby Mathew, HoD, Department of Computer Science and Engineering for his kind co-operation in all aspects of my Project.
+</p>
+<p>
+I express my sincere thanks to my internal guide, [Guide Name], Assistant Professor and my Project Coordinator [Coordinator Name], Assistant Professor for their encouragement and motivation during the project.
+</p>
+<p>
+I am indebted to my beloved teachers for their cooperation and suggestion throughout the project which helped me a lot. I also thank all my friends and classmates for their interest, dedication and encouragement shown towards the project.
+</p>
+<p>
+I convey hearty thanks to my parents for their moral support, suggestion and encouragement to make this venture a success.
+</p>
+
+<div class="page-break"></div>
+
+<!-- Abstract -->
+<h1 class="uppercase">Abstract</h1>
+<p>
+In an effort to empower Electric Vehicle (EV) users and mitigate range anxiety, this project proposes EvNavi, a cross-platform mobile application that serves as a smart EV navigation and route planning guide. EvNavi is designed to help EV drivers map their journeys efficiently by incorporating critical parameters such as vehicle battery percentage and dynamic range adjustments.
+</p>
+<p>
+The application utilizes Flutter for its front-end to provide a sleek, minimalist H&M-inspired black-and-white aesthetic, creating an intuitive user experience. It features interactive map exploration, origin and destination setting with autocomplete suggestions, and location picking directly on the map. EvNavi's route planning engine computes optimal paths while dynamically adjusting for the remaining battery capacity, ensuring users can confidently reach their destinations or find necessary charging stops along the way.
+</p>
+<p>
+This comprehensive approach overcomes simple geographic navigation by offering EV-specific insights, fostering a deeper understanding of journey limits, and ultimately enhancing the user's ability to travel in an eco-friendly and confident manner.
+</p>
+
+<div class="page-break"></div>
+
+<!-- Contents -->
+<h1 class="uppercase">Contents</h1>
+<p><b>ABSTRACT</b> ..................................................................................... v</p>
+<p><b>LIST OF FIGURES</b> ........................................................................... viii</p>
+<p><b>1 INTRODUCTION</b></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;1.1 Overview</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;1.2 Objective</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;1.3 Expected Outcome</p>
+<p><b>2 SOFTWARE REQUIREMENTS SPECIFICATION</b></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;2.1 Introduction</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;2.2 Overall Description</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;2.3 System Features and Requirements</p>
+<p><b>3 SOFTWARE ADOPTED</b></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;3.1 Introduction</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;3.2 Flutter and Dart</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;3.3 Google Maps & Navigation Libraries</p>
+<p><b>4 THE PROPOSED SYSTEM</b></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;4.1 Existing Systems</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;4.2 Proposed EV Route Engine</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;4.3 System Workflow</p>
+<p><b>5 IMPLEMENTATION</b></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;5.1 User Interface Development</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;5.2 Logic and Integration</p>
+<p><b>6 CONCLUSION AND FUTURE WORKS</b></p>
+<p><b>REFERENCES</b></p>
+
+<div class="page-break"></div>
+
+<!-- Chapter 1 -->
+<h1>CHAPTER 1 <br> INTRODUCTION</h1>
+
+<h2>1.1 Overview</h2>
+<p>
+EvNavi is an interactive, smart Electric Vehicle routing mobility application designed to eliminate range anxiety among electric vehicle drivers. By tracking battery percentages and calculating range metrics dynamically, the app allows drivers to plan their trips securely.
+</p>
+
+<h2>1.2 Objective</h2>
+<p>
+The primary objective of this application is to empower EV users by providing them with a reliable tool for battery-aware navigation. By utilizing location services and integrating real-time map tracking, the application aims to offer a comprehensive solution for recognizing distance limits and locating charging points in day-to-day commutes. The minimalist, high-contrast, black-and-white user interface reduces cognitive load and ensures safe interaction while driving.
+</p>
+
+<h2>1.3 Expected Outcome</h2>
+<p>
+The expected outcome of EvNavi is to empower individuals who drive electric vehicles by optimizing their navigation routines. Users of this application can expect to gain accurate routing paths, battery limit projections, and charging station visibility. This enhanced comprehension will aid their daily transport choices and contribute to stress-free, eco-friendly commuting.
+</p>
+
+<div class="page-break"></div>
+
+<!-- Chapter 2 -->
+<h1>CHAPTER 2 <br> SOFTWARE REQUIREMENTS SPECIFICATION</h1>
+
+<h2>2.1 Introduction</h2>
+<p>
+This section outlines the software landscape envisioned to support EV drivers through the EvNavi app. It highlights the expected functional boundaries and required features for an effective, usable navigation product.
+</p>
+
+<h2>2.2 Overall Description</h2>
+<p>
+The application serves as a comprehensive dashboard and route planner that integrates seamlessly with mapping services. Users need tools that calculate their geographical distance against their actual, real-time electric battery limits to avoid being stranded.
+</p>
+
+<h2>2.3 System Features and Requirements</h2>
+<h3>2.3.1 Functional Requirements</h3>
+<p>
+<b>1. Dynamic Trip Planning</b><br>
+Users can select an origin and destination via autocomplete searches or map pin-drops. The system calculates the geographic route and estimates battery usage.
+</p>
+<p>
+<b>2. Battery & Range Adjustments</b><br>
+Interactive sliders or inputs allow users to declare their current battery capacities and standard range metrics.
+</p>
+<p>
+<b>3. Real-Time Tracking & Speedometer</b><br>
+While connected to device GPS, the map centers on the current live location and displays travel speeds natively on the screen.
+</p>
+
+<h3>2.3.2 Non-Functional Requirements</h3>
+<p>
+<b>1. Premium Aesthetic Usability</b><br>
+A strictly modern, glassmorphic layout employing black-and-white contrasts ensures readabilty and a highly engaging layout flow, preventing driver distraction.
+</p>
+
+<div class="page-break"></div>
+
+<!-- Adding more chapters to fit the requirement length format -->
+<h1>CHAPTER 3 <br> SOFTWARE ADOPTED</h1>
+<h2>3.1 Introduction</h2>
+<p>
+This report outlines the development tools and technologies employed for EvNavi to guarantee performance and cross-platform reliability.
+</p>
+
+<h2>3.2 Flutter and Dart</h2>
+<p>
+Flutter serves as the chosen front-end framework because it allows the deployment of highly visual, customized iOS and Android builds from a single Dart codebase. It enables the fluid liquid-glass effects and smooth animations integral to the minimalist UI requirements.
+</p>
+
+<div class="page-break"></div>
+
+<h1>CHAPTER 4 <br> THE PROPOSED SYSTEM</h1>
+<h2>4.1 Existing Systems</h2>
+<p>
+Major geographical routing engines such as default Google Maps calculate shortest or fastest paths based on traffic. However, they lack native integration for EV-specific variables like battery discharge rates or charge-point discovery without breaking the main route context.
+</p>
+
+<h2>4.2 Proposed EV Route Engine</h2>
+<p>
+EvNavi proposes a layered system architecture where routing data from mapping APIs is post-processed against the selected EV’s range constraints. The UI immediately highlights whether a trip is achievable on current battery levels, proposing charging waypoints if not.
+</p>
+
+<div class="page-break"></div>
+
+<h1>CHAPTER 5 <br> IMPLEMENTATION</h1>
+<h2>5.1 User Interface Development</h2>
+<p>
+Implemented strictly adhering to H&M-inspired monochrome visual palettes. Key implementations include dynamic translucent overlay cards, responsive map markers, and minimalist floating control bars that adapt dynamically depending on the active routing state.
+</p>
+<h2>5.2 Testing and Validation</h2>
+<p>
+Thorough testing across Android and iOS emulators is conducted to assure location permission handling gracefully falls back, and the map layers smoothly pan and tilt based on touch interactions.
+</p>
+
+<div class="page-break"></div>
+
+<h1>CHAPTER 6 <br> CONCLUSION AND FUTURE WORKS</h1>
+<p>
+EvNavi introduces a sophisticated mobile solution specifically tackling electric vehicle mobility concerns. It successfully merges robust mapping engines with EV range calculations in a visually commanding format. Future enhancements could include Augmented Reality (AR) windshield overlays to project turns safely and Integration with live Charging Point availability APIs to ensure real-time reservation.
+</p>
+
+</body>
+</html>
